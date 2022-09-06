@@ -66,7 +66,7 @@ print()
 print(LOGIN_URL)
 print()
 print("➡️  After logging in, when the page shows \"redirect\", copy the URL from the address bar and paste it here:")
-code_url_s = input("> ")
+code_url_s = input(">https://remoteplay.dl.playstation.net/remoteplay/redirect?code=j0D1xm&cid=cfa31688-0357-433f-a071-5e676e0eeb0d ")
 code_url = urlparse(code_url_s)
 query = parse_qs(code_url.query)
 if "code" not in query or len(query["code"]) == 0 or len(query["code"][0]) == 0:
